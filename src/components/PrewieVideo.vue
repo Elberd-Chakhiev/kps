@@ -1,5 +1,8 @@
 <template>
     <div>{{dog}}</div>
+    <div> 
+     <slot /> 
+    </div>
 </template>
 
 <script>
