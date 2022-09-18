@@ -1,6 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    content: ["./index.html", "./src//*.{vue,js,ts,jsx,tsx, svg}"],
+    content: [
+        "./index.html",
+        "./src/*.{vue,js,ts,jsx,tsx, svg}",
+        "./src/**/*.{vue,js,ts,jsx,tsx, svg}",
+        "./src/**/**/*.{vue,js,ts,jsx,tsx, svg}",
+    ],
     theme: {
         extend: {},
         // colors: {
@@ -14,10 +19,8 @@ module.exports = {
             "2xl": { "max": "1920px" },
             "xl": { "max": "1140px" },
             "lg": { "max": "768px" },
-            "lgd": { "min": "768px" },
             "md": { "max": "539px" },
             "mmd": { "max": "450px" },
-            "xmmd": { "min": "449px" },
             "sm": { "max": "360px" },
             "xm": { "max": "320px" },
             "xmd": { "min": "321px" },
@@ -34,7 +37,6 @@ module.exports = {
             sm: { max: "360px" },
             xm: { max: "319px" },
             xmmin: { min: "320px" },
-            xmmin_2: { min: "321px" },
             xmmd: { min: "449px" },
             lgmin: { min: "768px" },
             xlmin: { min: "1140px" },
